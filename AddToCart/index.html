@@ -1,0 +1,142 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ShopX</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header class="navbar">
+
+        <div class="brand">
+            <img src="logo1.png" alt="ShopX Logo">
+            <h1>ShopX</h1>
+        </div>
+
+        <div class="search-box">
+            <input type="text" placeholder="Search products...">
+            <button>Search</button>
+        </div>
+
+        <div class="cart">
+           <a href="cart.html">🛒 Cart </a> <span>0</span>
+        </div>
+
+    </header>
+
+    <div class="categories">
+        <span>All</span>
+        <span>Electronics</span>
+        <span>Mobiles</span>
+        <span>Fashion</span>
+        <span>Accessories</span>
+        <span>Deals</span>
+    </div>
+
+    <main>
+
+        <section class="hero">
+            <h2>Welcome to ShopX</h2>
+            <p>Find the products you love at great prices.</p>
+        </section>
+
+        <h2 class="section-title">Today's Products</h2>
+
+        <section class="products">
+
+            <div class="product-card">
+                <div class="image-box">
+                    <img src="headphone1.webp" alt="Headphones">
+                </div>
+
+                <h3>boAt Rockerz 371 Wireless Headphones</h3>
+
+                <p class="description">
+                    40mm Drivers, 50hrs Battery, 60ms Low Latency,
+                    Bluetooth 5.4, Foldable Design.
+                </p>
+
+                <div class="rating">★★★★☆ <span>4.2</span></div>
+
+                <p class="price">₹1,299</p>
+                <p class="old-price">₹2,499</p>
+
+                <button onclick="addToCart('Boat Headphones')"class="add-to-cart">Add to Cart</button>
+            </div>
+
+
+            <div class="product-card">
+                <div class="image-box">
+                    <img src="watch.webp" alt="Smart Watch">
+                </div>
+
+                <h3>Noise ColorFit Smart Watch</h3>
+
+                <p class="description">
+                    AMOLED Display, Heart Rate Monitor,
+                    Sports Modes and Bluetooth Calling.
+                </p>
+
+                <div class="rating">★★★★★ <span>4.5</span></div>
+
+                <p class="price">₹1,799</p>
+                <p class="old-price">₹3,999</p>
+
+                <button onclick="addToCart('noise smart watch')" class="add-to-cart">Add to Cart</button>
+            </div>
+
+
+            <div class="product-card">
+                <div class="image-box">
+                    <img src="mouse.webp" alt="Gaming Mouse">
+                </div>
+
+                <h3>Logitech Gaming Mouse</h3>
+
+                <p class="description">
+                    High precision sensor, RGB lighting,
+                    ergonomic design and fast response.
+                </p>
+
+                <div class="rating">★★★★☆ <span>4.3</span></div>
+
+                <p class="price">₹899</p>
+                <p class="old-price">₹1,499</p>
+
+                <button onclick="addToCart('logitech gamign mouse')" class="add-to-cart">Add to Cart</button>
+            </div>
+
+
+            <div class="product-card">
+                <div class="image-box">
+                    <img src="keyboard.webp" alt="Keyboard">
+                </div>
+
+                <h3>Mechanical Gaming Keyboard</h3>
+
+                <p class="description">
+                    RGB Backlight, Mechanical Keys,
+                    Compact Layout and Gaming Mode.
+                </p>
+
+                <div class="rating">★★★★☆ <span>4.4</span></div>
+
+                <p class="price">₹1,499</p>
+                <p class="old-price">₹2,999</p>
+
+                <button onclick="addToCart('mechanical key board')" class="add-to-cart">Add to Cart</button>
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <script src="script.js"></script>
+
+</body>
+</html>
